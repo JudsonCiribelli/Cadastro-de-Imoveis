@@ -31,9 +31,26 @@ do {
       );
       if (confirma) {
         imoveis.push(imovel);
+        alert("Imóvel salvo com sucesso");
+      } else {
+        alert("Voltando ao menu");
       }
       break;
     case "2":
+      for (let i = 0; i < imoveis.length; i++) {
+        alert(
+          "Imovel: " +
+            (i + 1) +
+            "\nProprietario: " +
+            imoveis[i].proprietario +
+            "\nQuartos: " +
+            imoveis[i].quartos +
+            "\nBanheiros: " +
+            imoveis[i].banheiros +
+            "\nGaragem: " +
+            imoveis[i].garagem
+        );
+      }
       break;
     case "3":
       alert("Encerrando cadastro");
